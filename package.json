@@ -1,0 +1,22 @@
+{
+  "name": "youtube-video-lister",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npm run start --prefix server",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baabrian/youtube-video-lister.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baabrian/youtube-video-lister/issues"
+  },
+  "homepage": "https://github.com/baabrian/youtube-video-lister#readme"
+}
