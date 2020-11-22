@@ -7,7 +7,7 @@ import { VideoItem } from './VideoItem';
 export function VideoList(): JSX.Element {
   const videos = useSelector((state: Youtube) => state.youtube.videos);
 
-  const renderVideosList = () => {
+  const renderVideosList = (): JSX.Element[] => {
     return videos.map(({ videoId, thumbnail, title, description }) => (
       <VideoItem
         videoId={videoId}

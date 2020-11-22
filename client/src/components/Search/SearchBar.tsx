@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import { SearchButton } from './SearchButton';
 import { TextField } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
@@ -18,6 +18,10 @@ export function SearchBar(): JSX.Element {
 
   const [search, updateSearch] = useState('');
 
+  const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
+    updateSearch(event.target.value);
+  };
+
   const onSubmit = (): void => {
     console.log(search);
   };
@@ -28,9 +32,7 @@ export function SearchBar(): JSX.Element {
       className={classes.root}
       label='search'
       value={search}
-      onChange={(event) => {
-        updateSearch(event.target.value);
-      }}
+      onChange={handleChange}
       InputProps={{ endAdornment: <SearchButton submit={onSubmit} /> }}
     />
   );

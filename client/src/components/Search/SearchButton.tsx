@@ -8,7 +8,7 @@ type SearchButtonProps = {
 
 export function SearchButton({ submit }: SearchButtonProps) {
   return (
-    <IconButton onClick={() => submit()}>
+    <IconButton onClick={submit}>
       <SearchIcon />
     </IconButton>
   );
