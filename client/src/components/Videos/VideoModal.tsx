@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, CardMedia } from '@material-ui/core';
+import { Modal } from '@material-ui/core';
 
 type VideoModalProps = {
   videoId: string;

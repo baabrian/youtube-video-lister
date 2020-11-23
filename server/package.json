@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:run": "nodemon ./src/index.js",
-    "start": "npm run start:run"
+    "start:build": "tsc -w",
+    "start:run": "nodemon ./build/index.js",
+    "start": "concurrently \"npm run start:build\" \"npm run start:run\""
   },
   "author": "",
   "license": "ISC",

@@ -6,6 +6,7 @@ import {
   Typography,
   CardMedia,
   CardContent,
+  CardActionArea,
 } from '@material-ui/core';
 import { VideoModal } from './VideoModal';
 
@@ -25,19 +26,21 @@ export function VideoItem({
   };
   return (
     <Grid item xs={12} sm={6} md={4} lg={3}>
-      <Card onClick={handleOpen}>
-        <CardMedia
-          image={thumbnail}
-          style={{ height: 0, paddingTop: '56.25%' }}
-        />
-        <CardContent>
-          <Typography gutterBottom variant='h5'>
-            {title}
-          </Typography>
-          <Typography variant='body2' color='textSecondary'>
-            {description}
-          </Typography>
-        </CardContent>
+      <Card>
+        <CardActionArea onClick={handleOpen}>
+          <CardMedia
+            image={thumbnail}
+            style={{ height: 0, paddingTop: '56.25%' }}
+          />
+          <CardContent>
+            <Typography gutterBottom variant='h5'>
+              {title}
+            </Typography>
+            <Typography variant='body2' color='textSecondary'>
+              {description}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
       </Card>
       <VideoModal videoId={videoId} open={open} handleClose={handleClose} />
     </Grid>

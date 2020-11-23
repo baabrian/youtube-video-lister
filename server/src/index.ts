@@ -1,5 +1,5 @@
-const express = require('express');
-const homeRoutes = require('./routes/homeRoutes');
+import express from 'express';
+import { router as homeRoutes } from './routes/homeRoutes';
 
 const PORT = 6000;
 

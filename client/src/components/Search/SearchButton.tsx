@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FormEvent } from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 
 type SearchButtonProps = {
-  submit: () => void;
+  submit: (event: FormEvent) => void;
 };
 
 export function SearchButton({ submit }: SearchButtonProps) {
