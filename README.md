@@ -20,6 +20,6 @@ Simple full stack application that retrieves and consumes youtube api and then a
 
 # Images
 
-![](images/step_1.png)
-![](images/step_2.png)
-![](images/Rendering_Modal)
+![](images/step_1.PNG)
+![](images/step_2.PNG)
+![](images/Rendering_Modal.PNG)
