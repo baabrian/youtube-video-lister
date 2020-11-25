@@ -19,7 +19,6 @@ export function VideoList(): JSX.Element {
   const itemsPerPage = 12;
   const [page, setPage] = useState(1);
   const noOfPages = Math.ceil(videos.length / itemsPerPage);
-  console.log(videos.length);
 
   const handleChange = (event: any, value: number) => {
     setPage(value);
